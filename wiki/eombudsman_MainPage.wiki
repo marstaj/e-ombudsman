@@ -1,0 +1,16 @@
+= e-ombudsman =
+== Elektronický ombudsman ==
+
+Systém umožní anonymní oznamování korupčního a jiného protiprávního či neetického jednání. Využití systému se předpokládá především ve státní správě a samosprávě, ale i ve velkých komerčních firmách, kde si vedení uvědomuje, že protiprávní či neetické jednání firmu poškozuje.
+
+= Členové =
+Petr Dušek (dusekpe4@fel.cvut.cz)
+
+Michal Líška (liskamiso@gmail.com)
+
+Pavel Brož (brozpav1@fel.cvut.cz)
+
+Martin Štajner (stajnmar@fel.cvut.cz)
+
+= Dokumenty =
+[https://docs.google.com/spreadsheet/ccc?key=0AmLh4aPUNQq_dFpzcVU5RFdScGlmNkhuNE9vbHdCNWc#gid=0 Projektový deník]
