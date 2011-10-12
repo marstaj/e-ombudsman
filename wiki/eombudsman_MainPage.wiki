@@ -15,5 +15,6 @@ Martin Štajner (stajnmar@fel.cvut.cz, 732 173 025)
 = Dokumenty =
 [https://docs.google.com/spreadsheet/ccc?key=0AmLh4aPUNQq_dFpzcVU5RFdScGlmNkhuNE9vbHdCNWc#gid=0 Projektový deník]
 
+[https://docs.google.com/document/d/1ix_OvTXpnCdy0mFxCZV-oWGX-qrdUtd03gzLZH94q2s/edit?hl=cs Project Overview Statement]
 = Odkazy =
 [http://code.google.com/p/smart-fine/ Stránky projektu Smart Fine]
