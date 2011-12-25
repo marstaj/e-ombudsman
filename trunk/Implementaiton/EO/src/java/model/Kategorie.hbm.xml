@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 15.12.2011 17:22:16 by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+  <class catalog="eo" name="model.Kategorie" table="kategorie">
+    <id name="id" type="java.lang.Integer">
+      <column name="id"/>
+      <generator class="identity"/>
+    </id>
+    <property name="nazev" type="string">
+      <column name="nazev" not-null="true"/>
+    </property>
+    <property name="instituceId" type="int">
+      <column name="instituceID" not-null="true"/>
+    </property>
+  </class>
+</hibernate-mapping>
