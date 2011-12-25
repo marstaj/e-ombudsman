@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-reverse-engineering PUBLIC "-//Hibernate/Hibernate Reverse Engineering DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-reverse-engineering-3.0.dtd">
+<hibernate-reverse-engineering>
+  <schema-selection match-catalog="eo"/>
+  <table-filter match-name="resitel"/>
+  <table-filter match-name="instituce"/>
+  <table-filter match-name="uzivatel"/>
+  <table-filter match-name="role"/>
+  <table-filter match-name="poznamka"/>
+  <table-filter match-name="ukol"/>
+  <table-filter match-name="zadost"/>
+  <table-filter match-name="kategorie"/>
+</hibernate-reverse-engineering>

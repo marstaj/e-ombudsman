@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 15.12.2011 17:22:16 by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+  <class catalog="eo" name="model.Ukol" table="ukol">
+    <id name="id" type="java.lang.Integer">
+      <column name="id"/>
+      <generator class="identity"/>
+    </id>
+    <property name="datumPrijeti" type="string">
+      <column name="datumPrijeti" not-null="true"/>
+    </property>
+    <property name="datumSplneni" type="string">
+      <column name="datumSplneni" not-null="true"/>
+    </property>
+    <property name="nadpis" type="string">
+      <column name="nadpis" not-null="true"/>
+    </property>
+    <property name="textUkolu" type="string">
+      <column length="65535" name="textUkolu" not-null="true"/>
+    </property>
+    <property name="stavUkolu" type="string">
+      <column name="stavUkolu" not-null="true"/>
+    </property>
+    <property name="uzivatelId" type="int">
+      <column name="uzivatelID" not-null="true"/>
+    </property>
+    <property name="resitelId" type="int">
+      <column name="resitelID" not-null="true"/>
+    </property>
+    <property name="kategorieId" type="int">
+      <column name="kategorieID" not-null="true"/>
+    </property>
+    <property name="instituceId" type="int">
+      <column name="instituceID" not-null="true"/>
+    </property>
+  </class>
+</hibernate-mapping>

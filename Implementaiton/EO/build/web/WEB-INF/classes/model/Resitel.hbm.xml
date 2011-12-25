@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 15.12.2011 17:22:16 by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+  <class catalog="eo" name="model.Resitel" table="resitel">
+    <id name="id" type="java.lang.Integer">
+      <column name="id"/>
+      <generator class="identity"/>
+    </id>
+    <property name="login" type="string">
+      <column name="login" not-null="true"/>
+    </property>
+    <property name="heslo" type="string">
+      <column name="heslo" not-null="true"/>
+    </property>
+    <property name="jmeno" type="string">
+      <column name="jmeno" not-null="true"/>
+    </property>
+    <property name="prijmeni" type="string">
+      <column name="prijmeni" not-null="true"/>
+    </property>
+    <property name="kategorieId" type="int">
+      <column name="kategorieID" not-null="true"/>
+    </property>
+    <property name="stavUctu" type="string">
+      <column name="stavUctu" not-null="true"/>
+    </property>
+    <property name="instituceId" type="int">
+      <column name="instituceID" not-null="true"/>
+    </property>
+  </class>
+</hibernate-mapping>

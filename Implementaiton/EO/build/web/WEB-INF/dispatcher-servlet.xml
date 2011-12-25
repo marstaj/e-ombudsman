@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xmlns:tx="http://www.springframework.org/schema/tx"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+       http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-3.0.xsd
+       http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-3.0.xsd">
+
+    <bean class="org.springframework.web.servlet.mvc.support.ControllerClassNameHandlerMapping"/>
+    
+    <!--
+    Most controllers will use the ControllerClassNameHandlerMapping above, but
+    for the index controller we are using ParameterizableViewController, so we must
+    define an explicit mapping for it.
+    -->
+    <bean id="userKey" class="controller.UserController" />
+    <bean id="instituceKey" class="controller.InstituceController" />
+    <bean id="prideleniKey" class="controller.PrideleniController" />
+    <bean id="jmenovaniKey" class="controller.JmenovaniResiteleController" />
+    <bean id="smazaniKey" class="controller.SmazaniController" />
+    <bean id="potvrzeniKey" class="controller.PotvrzeniController" />
+    <bean id="ukolKey" class="controller.UkolController" />
+    <bean id="resitelKey" class="controller.ResitelController" />
+    <bean id="novyKey" class="controller.NovyController" />
+    <bean id="form3Key" class="controller.ResitelFormController">
+        <property name="successView" value="resitel.htm" />
+        <property name="commandClass" value="model.Resitel" />
+        <property name="commandName" value="resitel" />
+        <property name="formView" value="new_resitel_form" />
+        <property name="validator">
+            <bean class="controller.ResitelFormValidator" />
+        </property>
+    </bean>
+
+    <bean id="formKey" class="controller.UserFormController">
+        <property name="successView" value="login.htm" />
+        <property name="commandClass" value="model.Uzivatel" />
+        <property name="commandName" value="user" />
+        <property name="formView" value="new_user_form" />
+        <property name="validator">
+            <bean class="controller.UserFormValidator" />
+        </property>
+    </bean>
+    <bean id="form2Key" class="controller.UkolFormController">
+        <property name="successView" value="ukol.htm" />
+        <property name="commandClass" value="model.Ukol" />
+        <property name="commandName" value="ukol" />
+        <property name="formView" value="new_ukol_form" />
+        <property name="validator">
+            <bean class="controller.UkolFormValidator" />
+        </property>
+    </bean>
+    <bean id="form4Key" class="controller.InstituceFormController">
+        <property name="successView" value="instituce.htm" />
+        <property name="commandClass" value="model.Instituce" />
+        <property name="commandName" value="instituce" />
+        <property name="formView" value="new_instituce_form" />
+        <property name="validator">
+            <bean class="controller.InstituceFormValidator" />
+        </property>
+    </bean>
+
+    <bean id="loginKey" class="controller.LoginController">
+        <property name="sessionForm">
+            <value>false</value>
+        </property>
+        <property name="commandName">
+            <value>loginForm</value>
+        </property>
+        <property name="commandClass">
+            <value>model.Login</value>
+        </property>
+        <property name="formView">
+            <value>login</value>
+        </property>
+        <property name="successView">
+            <value>succesfullLogin</value>
+        </property>
+    </bean>
+    <bean id="hlavniKey" class="controller.HlavniStrankaController" />
+    <bean id="urlMapping" class="org.springframework.web.servlet.handler.SimpleUrlHandlerMapping">
+        <property name="mappings">
+            <props>
+                <prop key="instituce.htm">indexController</prop>
+                <prop key="uzivatel.htm">userKey</prop>
+                <prop key="new_user_form.htm">formKey</prop>
+                <prop key="new_ukol_form.htm">form2Key</prop>
+                <prop key="new_resitel_form.htm">form3Key</prop>
+                <prop key="new_instituce_form.htm">form4Key</prop>
+                <prop key="login.htm">loginKey</prop>
+                <prop key="hlavni_strana.htm">hlavniKey</prop>
+                <prop key="ukol.htm">ukolKey</prop>
+                <prop key="resitel.htm">resitelKey</prop>
+                <prop key="prideleni.htm">prideleniKey</prop>
+                <prop key="jmenovani_resitele.htm">jmenovaniKey</prop>
+                <prop key="novy.htm">novyKey</prop>
+                <prop key="instituce.htm">instituceKey</prop>
+                <prop key="smazani.htm">smazaniKey</prop>
+                <prop key="potvrzeni.htm">potvrzeniKey</prop>
+            </props>
+        </property>
+    </bean>
+
+    
+    
+    <bean id="viewResolver"
+          class="org.springframework.web.servlet.view.InternalResourceViewResolver"
+          p:prefix="/WEB-INF/jsp/"
+          p:suffix=".jsp" />
+    
+    <!--
+    The index controller.
+    -->
+    <bean name="indexController"
+          class="org.springframework.web.servlet.mvc.ParameterizableViewController"
+          p:viewName="hlavni_strana" />
+
+
+    
+</beans>
