@@ -15,7 +15,7 @@ Michal Líška (liskamiso@gmail.com, 731 435 694)
 
 [http://e-ombudsman.googlecode.com/files/analyza.pdf Analýza projektu (*.pdf)]
 
-[http://e-ombudsman.googlecode.com/files/zprava.pdf Závěrečná zpráva projektu (*.pdf)]
+[http://e-ombudsman.googlecode.com/files/zprava.pdf Závěrečná zpráva projektu pro verzi implementace r17 (*.pdf)]
 
 = Odkazy =
 == Repozitář ==
