@@ -17,7 +17,7 @@ Michal Líška (liskamiso@gmail.com, 731 435 694)
 
 [http://e-ombudsman.googlecode.com/files/zprava.pdf Závěrečná zpráva projektu pro verzi implementace r17 (*.pdf)]
 
-[http://code.google.com/p/e-ombudsman/source/browse/AIP v2_2.eap Aktuální verze analýzy v EA.Verze r18]
+[http://code.google.com/p/e-ombudsman/source/browse/svn/trunk/Other/AIP v2_2.eap Aktuální verze analýzy v EA.Verze r18]
 
 = Odkazy =
 == Repozitář ==
