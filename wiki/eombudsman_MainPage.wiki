@@ -24,6 +24,10 @@ Michal Líška (liskamiso@gmail.com, 731 435 694)
 [http://code.google.com/p/e-ombudsman/source/browse/ Odkaz na repozitář]
 == Předešlá analýza projektu ==
 [http://code.google.com/p/e-ombudsman/source/browse/trunk/Other/ElektronickyOmbudsman-odlVersion.zip Předešlá analýza]
+== Implementace projektu ==
+
+[http://code.google.com/p/e-ombudsman/source/browse/#svn%2Ftrunk%2FImplementaiton%2FEO Implementace projektu verze r17]
+
 ----
 = Závislý projekt =
 == Smart Fine ==
